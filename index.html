@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +14,98 @@
     <!-- Custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                yellowGreen: '#ABEF5F',
-                lightyellowGreen: '##cff6a2',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        yellowGreen: '#ABEF5F',
+                        lightyellowGreen: '##cff6a2',
+                        gray1: ' #E9E9E9',
+                        gray2: '#A0A0A0',
+                        gray3: '#737373',
+                        gray4: '#494949',
+                        gray5: '#212121',
+                        gray6: '#1C1C1C',
+                        bgGray: '#F4F4F4',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5cdf27c05f.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
-     <style>
+    <style>
         .font-manrope {
             font-family: "Manrope", serif;
         }
-     </style>
+    </style>
 </head>
 <body class="font-manrope">
-    <header></header>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="navbar flex justify-between bg-base-100">
+                <div class="space-x-2">
+                    <!-- landing page name/logo -->
+                    <div class="rounded-full bg-yellowGreen w-7 h-7 flex items-center justify-center">
+                        <!-- right arrow icon -->
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-2"></i>
+                    </div>
+                    <a class="text-3xl font-extrabold">Rinterio</a>
+                </div>
+                <!-- menu -->
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-gray3">
+                        <li class="text-gray4 font-extrabold"><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="space-x-4">
+                    <!-- search icon -->
+                    <div class="border-2 border-gray-200 rounded-full w-10 h-10 hidden md:flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass p-2"></i>
+                    </div>
+                    <!-- shopping cart icon -->
+                    <div class="border-2 border-gray-200 rounded-full w-10 h-10 hidden md:flex items-center justify-center">
+                        <i class="fa-solid fa-cart-shopping p-2"></i>
+                    </div>
+                    <!-- booking btn -->
+                    <div>
+                        <a class="btn hidden md:flex font-extrabold bg-yellowGreen">Book Consult
+                            <div class=" rounded-full bg-black text-white w-7 h-7 flex items-center justify-center">
+                                <!-- right arrow icon -->
+                                <i class="fa-solid fa-arrow-right -rotate-45 p-1"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- dropdown menu -->
+                    <div class="dropdown dropdown-left">
+                        <label tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <!-- hamburger svg -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-32 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section></section>
+    </header>
     <main></main>
     <footer></footer>
 </body>
